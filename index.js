@@ -13,6 +13,7 @@ function displayRandomImage() {
 function playAgain() {
   document.querySelector("#choices").style.display = "flex";
   document.querySelector("#announcement").innerHTML = "Choose a hand";
+  document.querySelector("#player-hand").src = "./img/choose-a-hand-01.jpg";
   document.querySelector("#play-again-button").setAttribute("hidden", true);
 }
 
