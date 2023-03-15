@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissors</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main id="arena">
+        <section>
+            <label>Player</label>
+            <img src="./img/choose-a-hand-01.jpg" alt="player-hand" id="player-hand">
+        </section>
+        <label>VS.</label>
+        <section>
+            <label>Enemy</label>
+            <img src="" alt="enemy-hand" id="enemy-hand">
+        </section>
+    </main>
+    
+    <section id="choose-hand">
+        <label id="announcement">Choose a hand</label>
+        <button onclick="play()" id="play-button" hidden>Play</button>
+        <button onclick="playAgain()" id="play-again-button" hidden>Play Again</button>
+        <section id="choices">
+            <img src="./img/rock.jpg" alt="rock" id="choose-rock">
+            <img src="./img/paper.jpg" alt="paper" id="choose-paper">
+            <img src="./img/scissors-01.jpg" alt="scissors" id="choose-scissors">
+        </section>
+    </section>
+
+
+    <footer>&copy; Damiel Maquiling - 2023</footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
