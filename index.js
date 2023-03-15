@@ -127,18 +127,21 @@ function play() {
 let intervalId = setInterval(displayRandomImage, 300);
 
 document.querySelector("#choose-rock").addEventListener("click", () => {
+  document.querySelector("#announcement").innerHTML = "You choose ROCK!";
   document.querySelector("#player-hand").src = rock;
   document.querySelector("#play-button").removeAttribute("hidden");
   document.querySelector("#play-again-button").setAttribute("hidden", true);
 });
 
 document.querySelector("#choose-paper").addEventListener("click", () => {
+  document.querySelector("#announcement").innerHTML = "You choose PAPER!";
   document.querySelector("#player-hand").src = paper;
   document.querySelector("#play-button").removeAttribute("hidden");
   document.querySelector("#play-again-button").setAttribute("hidden", true);
 });
 
 document.querySelector("#choose-scissors").addEventListener("click", () => {
+  document.querySelector("#announcement").innerHTML = "You choose SCISSORS!";
   document.querySelector("#player-hand").src = scissors;
   document.querySelector("#play-button").removeAttribute("hidden");
   document.querySelector("#play-again-button").setAttribute("hidden", true);
